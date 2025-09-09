@@ -1,19 +1,77 @@
-.badges-list {
+
+.gallery {
+  width: 1128px;
+  padding: 0 24px;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
+  gap: 48px 24px;
 }
-.badges-link {
+
+.gallery-item {
+  width: calc((1128px - 2 * 24px - 2 * 24px) / 3);
+  box-sizing: border-box;
+}
+
+.gallery-image {
   display: block;
-  padding: 8px 16px;
-  border: 1px solid;
-  border-radius: 8px;
-  transition: 200ms ease-in;
+  width: 100%;
+  height: auto;
 }
-.badges-link:hover,
-.badges-link:focus {
-  transform: scale(1.06);
-  color: #747bff;
-}
+
+
+  /*--- Контейнер форми---*/
+  
+    .feedback-form {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      box-sizing: border-box;
+    }
+
+    /* ===== Стилі для міток ===== */
+    .feedback-form label {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* ===== Стилі для полів ===== */
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+
+    .feedback-form input:focus,
+    .feedback-form textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    /* ===== Кнопка ===== */
+    .feedback-form button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .feedback-form button:hover {
+      background-color: #0056b3;
+    }
